@@ -12,6 +12,7 @@ const meta = {
   argTypes: {
     toastMsg: { control: "text" },
     closeMsg: { control: "text" },
+    snackbarShown: { control: "boolean" },
   },
 } satisfies Meta<typeof Toast>;
 
@@ -23,5 +24,14 @@ export const Primary: Story = {
   args: {
     toastMsg: "This is a toast message",
     closeMsg: "Close",
+    snackbarShown: false,
+  },
+};
+
+export const Open: Story = {
+  args: {
+    toastMsg: "This is a toast message",
+    closeMsg: "Close",
+    snackbarShown: true,
   },
 };

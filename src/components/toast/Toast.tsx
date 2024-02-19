@@ -19,9 +19,11 @@ function GrowTransition(props: GrowProps) {
 export default function Toast({
   toastMsg,
   closeMsg,
+  snackbarShown,
 }: {
   toastMsg: string;
   closeMsg: string;
+  snackbarShown: boolean;
 }) {
   const [state, setState] = React.useState<{
     open: boolean;
@@ -31,7 +33,7 @@ export default function Toast({
       }
     >;
   }>({
-    open: false,
+    open: snackbarShown,
     Transition: Fade,
   });
 
@@ -84,7 +86,7 @@ export default function Toast({
         TransitionComponent={state.Transition}
         message={toastMsg}
         key={state.Transition.name}
-        // autoHideDuration={3000}
+        autoHideDuration={snackbarShown ? null : 3000}
         // omit this to hide close button text
         action={action}
       />
