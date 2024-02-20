@@ -1,14 +1,15 @@
 import React from "react";
 import type { RootState } from "./store";
 import { useSelector, useDispatch } from "react-redux";
-import { decrement, increment } from "./counter-slice";
+import { decrement, increment } from "./slices/counter-slice";
+import Toolkit from "./ToolkitProvider";
 
 export default function Counter() {
   const count = useSelector((state: RootState) => state.counter.value);
   const dispatch = useDispatch();
 
   return (
-    <div>
+    <Toolkit>
       <div>
         <button
           aria-label="Increment value"
@@ -24,6 +25,6 @@ export default function Counter() {
           Decrement
         </button>
       </div>
-    </div>
+    </Toolkit>
   );
 }
