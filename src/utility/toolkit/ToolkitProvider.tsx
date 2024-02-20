@@ -3,7 +3,7 @@ Todo:
 - Install packages
   - yarn add @reduxjs/toolkit
   - yarn add react-redux
-- Delete Counter.tsx and Toolkit.stories.ts
+- Delete Counter.tsx, counterSlice.ts, and Toolkit.stories.ts
 */
 import { store } from "./store";
 import { Provider } from "react-redux";
