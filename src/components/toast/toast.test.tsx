@@ -1,11 +1,10 @@
 import { describe, it, expect } from "vitest";
 import "@testing-library/jest-dom";
 import { render, screen } from "@testing-library/react";
-import userEvent, { UserEvent } from "@testing-library/user-event";
 import Toast from "./Toast";
 
 describe("Toast", () => {
-  const tree = (snackbarShown) => {
+  const tree = (snackbarShown: boolean) => {
     return render(
       <Toast
         toastMsg="This is a toast message"
