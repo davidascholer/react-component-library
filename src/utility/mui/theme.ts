@@ -20,17 +20,16 @@ declare module "@mui/material/styles" {
   }
   // allow configuration using `createTheme`
   interface ThemeOptions {
-    status?: {
-      text?: string;
-      highlighted?: string;
-      clicked?: string;
-      background?: string;
+    link?: {
+      text?: { color: string };
+      highlighted?: { color: string };
+      clicked?: { color: string };
+      background?: { color: string };
     };
   }
 }
 
 //default theme: https://mui.com/material-ui/customization/default-theme/
-
 export default createTheme({
   palette: {
     mode: "light",
@@ -57,6 +56,6 @@ export default createTheme({
     },
   },
   typography: {
-    fontFamily: "Filson, Arial, Roboto",
+    fontFamily: "Roboto, Arial",
   },
 });

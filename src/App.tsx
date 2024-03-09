@@ -1,9 +1,11 @@
-function App() {
+import ReactRouter from "./utility/react-router/ReactRouter";
+
+const App = () => {
   return (
-    <>
-      <div>This is a storyboard only project</div>
-    </>
+    <div>
+      <ReactRouter />
+    </div>
   );
-}
+};
 
 export default App;

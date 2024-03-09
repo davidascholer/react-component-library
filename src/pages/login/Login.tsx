@@ -1,14 +1,25 @@
 import React from "react";
-import GoogleButton from "./media/GoogleButton";
-import AppleButton from "./media/AppleButton";
+// import GoogleButton from "./media/GoogleButton";
+// import AppleButton from "./media/AppleButton";
+import { Box } from "@mui/material";
+// import theme from "../../utility/mui/theme";
 
 const Login: React.FC = () => {
   const handleLogin = () => {
     // Handle login logic here
   };
 
+  const styles = {
+    container: {
+      width: "100%",
+    },
+    center: {
+      textAlign: "center",
+    },
+  };
+
   return (
-    <div>
+    <Box sx={[styles.container, styles.center]}>
       <h1>Login</h1>
       <form onSubmit={handleLogin}>
         <div>
@@ -22,10 +33,10 @@ const Login: React.FC = () => {
         <button type="submit">Login</button>
       </form>
       <div>
-        <GoogleButton />
-        <AppleButton />
+        {/* <GoogleButton />
+        <AppleButton /> */}
       </div>
-    </div>
+    </Box>
   );
 };
 
