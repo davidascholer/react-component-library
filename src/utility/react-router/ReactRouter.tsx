@@ -5,13 +5,21 @@ import ErrorPage from "./ErrorPage";
 import { ReactNode } from "react";
 import Root from "../../Root";
 import Counter from "../toolkit/Counter";
-import Login from "../../pages/login/Login";
+import Blog from "../../pages/blog/Blog";
+import SignIn from "../../pages/sign-in/SignIn";
+import SignInSide from "../../pages/sign-in-side/SignInSide";
+import SignUp from "../../pages/sign-up/SignUp";
+import StickyFooter from "../../components/sticky-footer/StickyFooter";
+import Checkout from "../../pages/checkout/Checkout";
+import Dashboard from "../../pages/dashboard/Dashboard";
+import LandingPage from "../../pages/landing-page/LandingPage";
+import Pricing from "../../pages/pricing/Pricing";
 
 const ReactRouter = ({ children }: { children?: ReactNode | null }) => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path={endpoints.ROOT} element={<Root />} />
+        <Route path={endpoints.BLOG} element={<Blog />} />
         <Route
           path={endpoints.BOTTOM_APP_BAR}
           element={
@@ -31,12 +39,20 @@ const ReactRouter = ({ children }: { children?: ReactNode | null }) => {
             />
           }
         />
-        <Route path={endpoints.TOOLKIT} element={<Counter />} />
         <Route
           path={endpoints.ERROR}
           element={<ErrorPage errorCode={404} errorMessage="Page Not Found" />}
         />
-        <Route path={endpoints.LOGIN} element={<Login />} />
+        <Route path={endpoints.CHECKOUT} element={<Checkout />} />
+        <Route path={endpoints.DASHBOARD} element={<Dashboard />} />
+        <Route path={endpoints.PRICING} element={<Pricing />} />
+        <Route path={endpoints.LANDING_PAGE} element={<LandingPage />} />
+        <Route path={endpoints.ROOT} element={<Root />} />
+        <Route path={endpoints.SIGN_IN} element={<SignIn />} />
+        <Route path={endpoints.SIGN_IN_SIDE} element={<SignInSide />} />
+        <Route path={endpoints.SIGN_UP} element={<SignUp />} />
+        <Route path={endpoints.STICKY_FOOTER} element={<StickyFooter />} />
+        <Route path={endpoints.TOOLKIT} element={<Counter />} />
       </Routes>
       {children}
     </BrowserRouter>

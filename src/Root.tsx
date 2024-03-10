@@ -10,13 +10,37 @@ const Root: React.FC = () => {
           <Link to={endpoints.BOTTOM_APP_BAR}>Bottom App Bar</Link>
         </li>
         <li>
-          <Link to={endpoints.TOOLKIT}>Toolkit</Link>
+          <Link to={endpoints.BLOG}>Blog</Link>
+        </li>
+        <li>
+          <Link to={endpoints.CHECKOUT}>Checkout</Link>
+        </li>
+        <li>
+          <Link to={endpoints.DASHBOARD}>Dashboard</Link>
         </li>
         <li>
           <Link to={endpoints.ERROR}>Error</Link>
         </li>
         <li>
-          <Link to={endpoints.LOGIN}>Login</Link>
+          <Link to={endpoints.LANDING_PAGE}>Landing Page</Link>
+        </li>
+        <li>
+          <Link to={endpoints.PRICING}>Pricing</Link>
+        </li>
+        <li>
+          <Link to={endpoints.SIGN_IN}>Sign In</Link>
+        </li>
+        <li>
+          <Link to={endpoints.SIGN_IN_SIDE}>Sign In Side</Link>
+        </li>
+        <li>
+          <Link to={endpoints.SIGN_UP}>Sign Up</Link>
+        </li>
+        <li>
+          <Link to={endpoints.STICKY_FOOTER}>Sticky Footer</Link>
+        </li>
+        <li>
+          <Link to={endpoints.TOOLKIT}>Toolkit</Link>
         </li>
       </ul>
     </div>
