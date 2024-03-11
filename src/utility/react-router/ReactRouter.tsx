@@ -1,7 +1,7 @@
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import endpoints from "./endpoints";
 import BottomAppBar from "../../components/bottom-app-bar/BottomAppBar";
-import ErrorPage from "./ErrorPage";
+import ErrorPage from "../../pages/error/ErrorPage";
 import { ReactNode } from "react";
 import Root from "../../Root";
 import Counter from "../toolkit/Counter";

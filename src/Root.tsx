@@ -1,14 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import endpoints from "./utility/react-router/endpoints";
+import { Typography } from "@mui/material";
 
 const Root: React.FC = () => {
   return (
-    <div>
+    <>
+      <Typography variant="h5">Pages</Typography>
       <ul>
-        <li>
-          <Link to={endpoints.BOTTOM_APP_BAR}>Bottom App Bar</Link>
-        </li>
         <li>
           <Link to={endpoints.BLOG}>Blog</Link>
         </li>
@@ -36,14 +35,23 @@ const Root: React.FC = () => {
         <li>
           <Link to={endpoints.SIGN_UP}>Sign Up</Link>
         </li>
-        <li>
-          <Link to={endpoints.STICKY_FOOTER}>Sticky Footer</Link>
-        </li>
+      </ul>
+      <Typography variant="h5">Utility</Typography>
+      <ul>
         <li>
           <Link to={endpoints.TOOLKIT}>Toolkit</Link>
         </li>
       </ul>
-    </div>
+      <Typography variant="h5">Components</Typography>
+      <ul>
+        <li>
+          <Link to={endpoints.BOTTOM_APP_BAR}>Bottom App Bar</Link>
+        </li>
+        <li>
+          <Link to={endpoints.STICKY_FOOTER}>Sticky Footer</Link>
+        </li>
+      </ul>
+    </>
   );
 };
 
