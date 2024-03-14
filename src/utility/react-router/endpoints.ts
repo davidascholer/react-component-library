@@ -7,6 +7,7 @@ const EXTERNAL = {};
 const LANDING_PAGE: string = "/landing-page";
 const LOGIN: string = "/login";
 const PRICING: string = "/pricing";
+const REACT_QUERY: string = "/react-query";
 const ROOT: string = "/";
 const SIGN_IN: string = "/sign-in";
 const SIGN_IN_SIDE: string = "/sign-in-side";
@@ -24,6 +25,7 @@ export default {
   LANDING_PAGE,
   LOGIN,
   PRICING,
+  REACT_QUERY,
   ROOT,
   SIGN_IN,
   SIGN_IN_SIDE,
