@@ -27,6 +27,9 @@ const Root: React.FC = () => {
           <Link to={endpoints.PRICING}>Pricing</Link>
         </li>
         <li>
+          <Link to={endpoints.REACT_QUERY}>React Query</Link>
+        </li>
+        <li>
           <Link to={endpoints.SIGN_IN}>Sign In</Link>
         </li>
         <li>

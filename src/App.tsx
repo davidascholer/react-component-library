@@ -1,9 +1,9 @@
-import ReactRouter from "./utility/react-router/ReactRouter";
+import ReactRouterExample from "./utility/react-router/Example";
 
 const App = () => {
   return (
     <div>
-      <ReactRouter />
+      <ReactRouterExample />
     </div>
   );
 };

@@ -1,16 +1,19 @@
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import endpoints from "./endpoints";
-import BottomAppBar from "../../components/bottom-app-bar/BottomAppBar";
-import ErrorPage from "../../pages/error/ErrorPage";
 import { ReactNode } from "react";
 import Root from "../../Root";
-import ReactQuery from "../react-query/Example";
+// utility
 import Counter from "../toolkit/Counter";
+import ReactQuery from "../react-query/Main";
+// components
+import BottomAppBar from "../../components/bottom-app-bar/BottomAppBar";
+import StickyFooter from "../../components/sticky-footer/StickyFooter";
+// pages
+import ErrorPage from "../../pages/error/ErrorPage";
 import Blog from "../../pages/blog/Blog";
 import SignIn from "../../pages/sign-in/SignIn";
 import SignInSide from "../../pages/sign-in-side/SignInSide";
 import SignUp from "../../pages/sign-up/SignUp";
-import StickyFooter from "../../components/sticky-footer/StickyFooter";
 import Checkout from "../../pages/checkout/Checkout";
 import Dashboard from "../../pages/dashboard/Dashboard";
 import LandingPage from "../../pages/landing-page/LandingPage";
