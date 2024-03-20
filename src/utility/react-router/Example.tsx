@@ -4,7 +4,7 @@ import { ReactNode } from "react";
 import Root from "../../Root";
 // utility
 import Counter from "../toolkit/Counter";
-import ReactQuery from "../react-query/Main";
+import ReactQuery from "../react-query/Example";
 // components
 import BottomAppBar from "../../components/bottom-app-bar/BottomAppBar";
 import StickyFooter from "../../components/sticky-footer/StickyFooter";

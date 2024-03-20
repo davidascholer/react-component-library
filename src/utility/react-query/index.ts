@@ -1,3 +1,3 @@
-import Main from "../../pages/blog/Main";
+import Example from "./Example";
 
-export default Main;
+export default Example;
