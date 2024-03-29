@@ -5,7 +5,7 @@ import postService from "../services/postService";
 
 const apiClient = postService;
 
-const useCustomMutation = (data: any) => {
+const useCustomMutation = (data: PostsQueryType) => {
   const queryClient = useQueryClient();
   return useMutation({
     mutationFn: () => apiClient.post(data),
@@ -14,7 +14,7 @@ const useCustomMutation = (data: any) => {
     // queryClient.invalidateQueries({
     //   queryKey: ["posts"],
     // });
-    // ]);
+    // },
     // Handle resetting the cache locally
     onSuccess: (savedData: any) => {
       queryClient.setQueryData<PostsQueryType[]>(["posts"], (oldData) => [
