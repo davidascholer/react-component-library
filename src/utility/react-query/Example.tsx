@@ -75,7 +75,7 @@ const CustomContent: React.FC = () => {
     <div>
       <h1>Custom Posts</h1>
       <h4>Get with user id: 2</h4>
-      {customQuery.data?.map((post) => (
+      {customQuery.data?.map((post: PostsType) => (
         <ul key={post.id}>
           <li>id: {post.id}</li>
           <li>title: {post.title}</li>
@@ -118,7 +118,7 @@ const CustomPaginationPageContent: React.FC = () => {
   return (
     <div>
       <h1>Paginated Pages Posts</h1>
-      {customPaginatedQuery.data?.map((post) => (
+      {customPaginatedQuery.data?.map((post: PostsType) => (
         <ul key={post.id}>
           <li>id: {post.id}</li>
           <li>title: {post.title}</li>
@@ -199,7 +199,7 @@ const CustomMutationQuery: React.FC = () => {
       <h1>Mutate data</h1>
       <h4>Change id 11 body to "new body"</h4>
       <div>
-        {customQuery.data?.map((post) => (
+        {customQuery.data?.map((post: PostsType) => (
           <ul key={post.id}>
             <li>id: {post.id}</li>
             <li>title: {post.title}</li>
