@@ -51,6 +51,14 @@ const Root: React.FC = () => {
           <Link to={endpoints.BOTTOM_APP_BAR}>Bottom App Bar</Link>
         </li>
         <li>
+          <Link to={endpoints.SIDE_APP_BAR_COLLAPSE}>
+            Side App Bar Collapse
+          </Link>
+        </li>
+        <li>
+          <Link to={endpoints.SIDE_APP_BAR_ICONS}>Side App Bar Icons</Link>
+        </li>
+        <li>
           <Link to={endpoints.STICKY_FOOTER}>Sticky Footer</Link>
         </li>
       </ul>

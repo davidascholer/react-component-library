@@ -6,11 +6,13 @@ import Root from "../../Root";
 import Counter from "../toolkit/Counter";
 import ReactQuery from "../react-query/Example";
 // components
-import BottomAppBar from "../../components/bottom-app-bar/BottomAppBar";
+import BottomAppBar from "../../components/app-bars/bottom-app-bar/BottomAppBar";
 import StickyFooter from "../../components/sticky-footer/StickyFooter";
 // pages
 import ErrorPage from "../../pages/error/ErrorPage";
 import Blog from "../../pages/blog/Blog";
+import SideAppBarCollapse from "../../components/app-bars/side-app-bar-collapse/SideAppBarCollapse";
+import SideAppBarIcons from "../../components/app-bars/side-app-bar-icons/SideAppBarIcons";
 import SignIn from "../../pages/sign-in/SignIn";
 import SignInSide from "../../pages/sign-in-side/SignInSide";
 import SignUp from "../../pages/sign-up/SignUp";
@@ -53,6 +55,14 @@ const ReactRouter = ({ children }: { children?: ReactNode | null }) => {
         <Route path={endpoints.LANDING_PAGE} element={<LandingPage />} />
         <Route path={endpoints.REACT_QUERY} element={<ReactQuery />} />
         <Route path={endpoints.ROOT} element={<Root />} />
+        <Route
+          path={endpoints.SIDE_APP_BAR_COLLAPSE}
+          element={<SideAppBarCollapse />}
+        />
+        <Route
+          path={endpoints.SIDE_APP_BAR_ICONS}
+          element={<SideAppBarIcons />}
+        />
         <Route path={endpoints.SIGN_IN} element={<SignIn />} />
         <Route path={endpoints.SIGN_IN_SIDE} element={<SignInSide />} />
         <Route path={endpoints.SIGN_UP} element={<SignUp />} />
